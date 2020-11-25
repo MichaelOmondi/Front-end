@@ -1,0 +1,54 @@
+.home p:nth-child(1){
+  font-family: calibri;
+  font-weight: bold;
+  color: #403e3e;
+  font-size: 22px;
+}
+.home p:nth-child(2){
+  font-family: calibri;
+  font-weight: bold;
+  letter-spacing:1px;
+  color: #1a1a1a;
+  font-size: 60px;
+}
+.home p{
+  line-height: 0px;
+  margin: 45px 0px 25px;
+}
+.home{
+  position: absolute;
+  left: 13%;
+  top: 42%;
+  transform: translate(-13%,-42%);
+}
+.home button{
+  width: 130px;
+  height: 42px;
+  border-radius: 10px;
+  font-family: calibri;
+  font-weight: bold;
+  font-size: 14px;
+  outline: none;
+  margin: 0px 10px;
+}
+.hire-btn{
+  border: 2px solid #373636;
+  color: #373636;
+}
+button:active{
+  transform: scale(1.1);
+}
+section{
+  width: 100%;
+  height: 90vh;
+  background-image: url(../../assets/house.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+}
+body{
+  background-attachment: fixed;
+  background-size: cover;
+  height: 95vh;
+  width: 100%;
+}

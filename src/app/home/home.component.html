@@ -1,0 +1,32 @@
+<div class="container">
+    <h4 class="text-center">Houses On Display</h4>
+    <div class="row">
+        <div class="col-md-8">
+            <!-- <div class="card" *ngFor="let house of houses" style="margin: 10px;">
+                <div class="card-header" style="background-color: blue; color: white;">
+                    <div class="card-title">{{house.category}}</div>
+                </div>
+                <div class="card-body">
+                    <img src="{{house.image.url}}" alt="img" style="height: 400px; width: 400px;">
+                    <h4>{{house.description}}</h4>
+                    <p>{{house.location}}</p>
+                </div>
+            </div> -->
+            <mat-card *ngFor="let house of houses" style="margin: 10px; background-color: powderblue; color: black;">
+                <mat-card-header>
+                    <mat-card-title>{{house.name}}</mat-card-title>
+                    <mat-card-subtitle> Category: {{house.category}}</mat-card-subtitle>
+                </mat-card-header>
+                <mat-card-content>
+                    <img src="{{house.image}}" alt="image" style="width: 500px; height: 500px;" class="img-fluid">
+                    <p>{{house.description}}</p>
+                </mat-card-content>
+                <mat-card-footer>
+                    <p>Location: {{house.location}}</p>
+                    <p>Price: {{house.price}}</p>
+                </mat-card-footer>
+            </mat-card>
+                
+        </div>
+    </div>
+</div>
